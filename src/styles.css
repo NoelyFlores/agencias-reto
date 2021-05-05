@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+.btn-primary-local {
+    background-color: #ff7800;
+    color: #fff;
+}
+.btn-ligth-local {
+    border: 1px solid #ff7800;
+    color: #ff7800;
+}
+.btn-ligth-local:hover{
+    background-color: #ff7800;
+    color: #fff;
+    border: 1px solid #ff7800;
+}

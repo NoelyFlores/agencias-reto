@@ -1,0 +1,62 @@
+<div class="container mt-3">
+    <form action="" [formGroup]="form" (ngSubmit)="onSave()" class="d-flex flex-wrap">
+      <h3 class="col-12"><b>Detalles de la Agencia</b></h3>
+      <div class="form-group col-12 col-md-4">
+        <label for="exampleInputEmail1">Nombre agencia</label>
+        <input 
+          type="text" 
+          placeholder="Nombre agencia" 
+          formControlName="txtNombreAgencia" 
+          id="txtNombreAgencia"
+          class="form-control"
+          autocomplete="off"
+        >
+      </div>
+      <div class="form-group col-12 col-md-8">
+        <label for="exampleInputEmail1">Dirección</label>
+        <input 
+          type="text" 
+          placeholder="Dirección" 
+          formControlName="txtDireccion" 
+          id="txtDireccion"
+          class="form-control"
+          autocomplete="off">
+      </div>
+      <div class="form-group col-12 col-md-4">
+        <label for="exampleInputEmail1">Distrito</label>
+        <input 
+          type="text" 
+          placeholder="Distrito" 
+          formControlName="txtDistrito" 
+          id="txtDistrito"
+          class="form-control"
+          autocomplete="off"> 
+      </div>
+      <div class="form-group col-6 col-md-4">
+        <label for="exampleInputEmail1">Latitud</label>
+        <input 
+          type="number" 
+          placeholder="Latitud" 
+          formControlName="txtLatitud" 
+          id="txtLatitud"
+          class="form-control"
+          autocomplete="off">
+      </div>
+      <div class="form-group col-6 col-md-4">
+        <label for="exampleInputEmail1">Longitud</label>
+        <input 
+          type="text" 
+          placeholder="Longitud" 
+          formControlName="txtLongitud" 
+          id="txtLongitud"
+          class="form-control"
+          autocomplete="off"> 
+      </div>
+      <div class="col-12 text-right">
+        <button type="submit" [disabled]="!form.valid" class="btn btn-primary-local">
+          Guardar
+        </button>
+      </div>
+      
+    </form>
+  </div>

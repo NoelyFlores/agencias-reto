@@ -1,0 +1,24 @@
+.splash-load {
+    background: #012D74;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    opacity: 1;
+  }
+    .splash-load-logo {
+      background: url("./../../../../assets/logo-bcp.svg");
+      background-repeat: no-repeat;
+      max-width: 100%;
+      background-position: center;
+      background-size: contain;
+      width: 100px;
+      height: 100px;
+    }

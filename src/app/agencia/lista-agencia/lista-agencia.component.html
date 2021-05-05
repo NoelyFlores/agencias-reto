@@ -1,0 +1,16 @@
+<div class="container mt-3">
+    <div class="d-flex flex-wrap">
+      <div *ngFor="let item of agencias" class="col-12 col-md-6 col-lg-4">
+        <div class="bcp-box-agencia">
+          <!-- imagen -->
+          <img src="../../../../assets/bcp.jpg" alt="agencia-BCP" height="150">
+          <div class="p-3">
+            <h5 for=""><b>{{ item.agencia }}</b></h5>
+            <h9>{{ item.distrito }} / {{ item.provincia }} / {{ item.departamento }}</h9>
+            <p class="bcp-txt-ligth">{{ item.direccion }}</p>
+            <button (click)="onEditarAgencia(item)" class="btn btn-outline-primary btn-ligth-local">Actualizar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
